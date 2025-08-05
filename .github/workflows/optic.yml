@@ -19,4 +19,4 @@ jobs:
         env:
           OPTIC_TOKEN: ${{ secrets.OPTIC_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: optic diff
+        run: optic diff openapi.yml --base main
